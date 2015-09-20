@@ -10,7 +10,8 @@ def prime(num):
         if dictionary[i]:
             for j in range(num+1):
                 x = (i**2) + (j*i)
-                dictionary[x] = False
+                if x <= num:
+                    dictionary[x] = False
 
 
     answer = [x for x in dictionary if dictionary[x] == True]

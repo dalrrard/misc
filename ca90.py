@@ -1,5 +1,6 @@
 __author__ = 'dalton'
 
+
 def printer(x):
     print(''.join(['X' if i == 1 else ' ' for i in x]))
 
